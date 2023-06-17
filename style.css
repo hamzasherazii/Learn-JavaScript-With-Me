@@ -1,0 +1,85 @@
+html, body{
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('./tasbeeh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* border: 2px solid white; */
+}
+
+.parentDiv{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 35rem;
+    margin: 10rem 0 10rem 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.86;
+    border-radius: 2rem;
+
+}
+
+.firstChild{
+    /* border: 1px solid red; */
+    position: relative;
+    top: -6rem;
+    padding: 1rem;
+    background-color: rgb(20, 143, 133);
+    border-radius: 1.5rem;
+}
+
+.firstChild h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.secondChild{
+    /* border: 1px solid red; */
+    width: 30rem;
+    text-align: center;
+    position: relative;
+    top: -3.4rem;
+    background-color: rgb(176, 195, 212);
+    border-radius: 0.5rem;
+}
+
+.thirdChild{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -1rem;
+}
+
+.grandChild1{
+    margin-right: 1rem;
+}
+
+.grandChild button{
+    padding: 1rem;
+    width: 14.6rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.grandChild1 button{
+    background: rgb(73, 20, 148);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+
+.grandChild2 button{
+    background-color: rgb(156, 16, 16);
+    color: white;
+    font-weight: 800;
+}
