@@ -1,112 +1,143 @@
-html, body{
-    min-height: 100%;
-}
-body{
+/* Apply dark mode */
+body {
+    background-color: #36393f;
+    color: #fff;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-image: url('./tasbeeh.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    /* border: 2px solid white; */
+    font-family: Arial, sans-serif;
 }
 
-.parentDiv{
-    /* border: 2px solid red; */
+/* Horizontal layout using Flexbox */
+.discord-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Style the servers list on the left side */
+.servers-list {
+    background-color: #2f3136;
+    padding: 15px;
+    width: 200px;
+    overflow-y: auto;
+    border-right: 1px solid #42464d; /* Add vertical line on the right */
+}
+
+.servers-list h3 {
+    color: #fff;
+}
+
+.server-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.server-icons li {
+    margin: 10px 0;
+}
+
+.server-icons a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.server-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Style the channels list on the left side */
+.channels-list {
+    background-color: #2f3136;
+    padding: 15px;
+    width: 200px;
+    overflow-y: auto;
+    border-right: 1px solid #42464d; /* Add vertical line on the right */
+}
+
+.channels-list h4 {
+    color: #fff;
+}
+
+.channel-names {
+    list-style: none;
+    padding: 0;
+}
+
+.channel-names li {
+    margin: 10px 0;
+}
+
+/* Style channel links */
+.channel-names a {
+    text-decoration: none;
+    color: #fff;
+    display: block; /* Make the entire list item clickable */
+    padding: 5px 0;
+}
+
+/* Add hover effect for channel links */
+.channel-names a:hover {
+    background-color: #42464d;
+}
+
+/* Style the messages section in the center */
+.messages {
+    background-color: #2f3136;
+    padding: 0;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50rem;
-    height: 35rem;
-    margin: 10rem 0 10rem 0;
-    background-color: rgb(255, 255, 255);
-    opacity: 0.86;
-    border-radius: 2rem;
-
+    border-right: 1px solid #42464d; /* Add vertical line on the right */
 }
 
-.firstChild{
-    /* border: 1px solid red; */
-    position: relative;
-    top: -4rem;
-    padding: 1rem 3rem;
-    background-color: rgb(20, 143, 133);
-    border-radius: 1.5rem;
+#messages {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
-.firstChild h1{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.secondChild{
-    /* border: 1px solid red; */
-    width: 30rem;
-    text-align: center;
-    position: relative;
-    top: -1rem;
-    background-color: rgb(176, 195, 212);
-    border-radius: 0.5rem;
-}
-
-.thirdChild{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 1rem;
-}
-
-.grandChild1{
-    margin-right: 1rem;
-}
-
-.grandChild button{
-    padding: 1rem;
-    width: 14.6rem;
-    border-radius: 0.5rem;
+#message-input {
+    width: 1000px;
+    padding: 10px;
     border: none;
+    background-color: #40444b;
+    color: #fff;
 }
 
-.grandChild1 button{
-    background: rgb(73, 20, 148);
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-}
-
-.grandChild2 button{
-    background-color: rgb(156, 16, 16);
-    color: white;
-    font-weight: 800;
-}
-
-.fourthChild{
-    position: relative;
-    top: 2rem;
-}
-
-.fourthChild button{
-    background-color: rgb(35, 144, 71);
+#send-button {
+    padding: 10px 20px;
+    background-color: #7289da;
+    color: #fff;
     border: none;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    padding: 1rem;
-    width: 30rem;
-    border-radius: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.fifthChild{
-    /* border: 1px solid red; */
-    width: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(170, 170, 170);
-    position: relative;
-    height: 5rem;
-    top: 5rem;
+#send-button:hover {
+    background-color: #677bc4;
+}
+
+/* Style the server members on the right side */
+.server-members {
+    background-color: #2f3136;
+    padding: 15px;
+    width: 200px;
+    overflow-y: auto;
+}
+
+.server-members h4 {
+    color: #fff;
+}
+
+.member-names {
+    list-style: none;
+    padding: 0;
+}
+
+.member-names li {
+    margin: 10px 0;
+    color: #fff;
 }
