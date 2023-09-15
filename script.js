@@ -10,3 +10,8 @@ document.getElementsByClassName("para1")[0].textContent = "first paragraph";
 
 var myBtn = document.getElementById("link2");
 myBtn.style.color = "green";
+
+// -------------
+
+
+document.querySelector(".para3").textContent = "Sherazi Hamza";
