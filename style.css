@@ -4,3 +4,9 @@
     font-size: 30px;
     padding: 8px;
 }
+
+.para3{
+    color: aqua;
+    border: 2px solid grey;
+    width: fit-content;
+}

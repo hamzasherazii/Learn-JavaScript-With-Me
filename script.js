@@ -13,5 +13,10 @@ myBtn.style.color = "green";
 
 // -------------
 
-
+// modifying html with javascript
 document.querySelector(".para3").textContent = "Sherazi Hamza";
+
+// modifying css with javascript
+var myPara = document.getElementsByClassName("para3")[0];
+myPara.style.color = "red";
+myPara.style.backgroundColor = "yellow";
