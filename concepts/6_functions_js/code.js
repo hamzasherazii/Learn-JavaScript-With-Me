@@ -24,3 +24,18 @@ const divide = (a,b) => {
 }
 
 console.log(divide(10, 2)); // Output: 5
+
+const greet2 = (name2) => {
+    return `Hello, ${name2}`;
+}
+
+console.log(greet2('Saad'));
+
+
+const add2 = (a, b, c) => {
+    return a + b + c;
+}
+
+console.log(add2(1, 2, 3)); // Output: 6
+
+
