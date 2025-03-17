@@ -1,13 +1,15 @@
-const swap = (i, j) => {
-    i = j;
-    j = i;
-}
+let str1 = "Hello";
+let str2 = "World";
 
-let i = "Hamza";
-let j = "Saad";
+console.log("Before Swap:");
+console.log("str1:", str1);
+console.log("str2:", str2);
 
-console.log(i, j);
+// Swapping the strings
+let temp = str1;
+str1 = str2; // str1 = "World"
+str2 = temp; // str2 = "Hello"
 
-swap(i, j);
-
-console.log(i, j);
+console.log("After Swap:");
+console.log("str1:", str1);
+console.log("str2:", str2);
